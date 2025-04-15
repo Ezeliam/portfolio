@@ -1,0 +1,156 @@
+{
+"global": {
+  "header": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "language_selector": "Language",
+    "languages": {
+      "en": "English",
+      "es": "Spanish"
+    }},
+    "about": {
+      "title": "About Me",
+      "description1": "I am a **Programming Technician**, specialized in **Front-End**, but with the ability to adapt to **any programming language**. *I learn quickly* and adapt easily to new technologies.",
+      "description2": "I focus on **aesthetics** and **usability**, creating *intuitive* and *attractive* interfaces for users.",
+      "description3": "Currently, I'm training in **Artificial Intelligence**, a field I consider **key for the future** of *technological development*.",
+      "description4": "I'm also a **bassist** in the band [Sapiens](https://www.youtube.com/@sapiensrls). I enjoy **strategy videogames** and I'm a big fan of **cannelloni**."
+    },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Here are some of my projects.",
+    "details": "View details",
+    "descriptiontitle":"Description",
+    "technologytitle":"Technologies",
+    "projects": [
+      {
+        "title": "Codex",
+        "description": "Data management system for construction cooperative.",
+        "largeDescription": {
+          "intro": "This project emerged from an internship at COOPTEBA, a housing construction cooperative for teachers. There we faced the problem of designing a web page for managing construction zone data, as until then all this data was handled on paper and/or disorganized in a drive.",
+          "points": [
+            "Intuitive and simple design, as most users are older adults",
+            "Clear user hierarchy, only the cooperative owner could add or delete users",
+            "Action logging, they needed a record of all actions performed by users"
+          ],
+          "development": "Following these points and others that emerged in various interviews, we managed to create a web page that fits the cooperative's needs and is easy to use for all users.\n\nTo program the product we had to train in various technologies. A colleague and I worked on Front End design with React, HTML/CSS and JavaScript (only React was new to us), while 2 other colleagues trained in Back End with Java, Springboot and MySQL. We also used many tools like Postman, Git, GitHub, Jira, etc.",
+          "achievement": "This project was presented at ExpoProyecto 2024 organized by the National University of La Matanza, winning the award for innovation and originality, due to the innovative data management approach never before seen for a construction cooperative."
+        },
+        "technologies": ["ReactJS", "Bootstrap", "SpringBoot", "JavaScript", "HTML/CSS", "JWT"]
+      },
+      {
+        "title": "ReVi",
+        "description": "Virtual attendance record for students.",
+        "largeDescription": {
+          "intro": "This is a school group project created to digitize school attendance records, with the idea of implementing additional modules for grade management, evaluations, etc.",
+          "points": [
+            "Responsive design, the main idea is that it can be used on any device to take attendance and more",
+            "Clear user hierarchy: principals manage supervisors, supervisors manage teachers, and teachers manage students",
+            "Scalability, since the idea was to make it as complete as possible in the future, we had to be careful with how we programmed to avoid future problems"
+          ],
+          "development": "For programming we used React, Bootstrap to make it responsive, HTML, CSS and JavaScript for Front End (where I was in charge), and Java, SpringBoot and MySQL for Back End. We also used Github for version control and JWT for login sessions."
+        },
+        "technologies": ["ReactJS", "Bootstrap", "SpringBoot", "JavaScript", "HTML/CSS", "JWT"]
+      },
+      {
+        "title": "LED Controller",
+        "description": "LED controller for stock management in factory.",
+        "largeDescription": {
+          "intro": "I was commissioned to create this LED manager for a factory to be used on a stock shelf where GREEN means there is stock and RED means there isn't. This required controlling the LEDs individually for each shelf compartment.",
+          "points": [
+            "The LED states had to be saved under any circumstances",
+            "The LED response had to be in real time",
+            "We had to avoid any problems with the microcontroller code, since if there were issues, uploading and testing new code would be problematic due to the distance between the ESP8266 and me"
+          ],
+          "development": "When starting to program, I had to research how to save an LED state without resetting when powered off. I solved this using SPIFFS, a reduced file system available in ESP32 and ESP8266, where I created a JSON to save each LED state.\n\nFor constant real-time connection with the page we used the WebSockets function of the ESP, so through page requests the LED states change and the LED states are also shown on the page.",
+          "conclusion": "Finally, I considered every possible data corruption scenario that could occur in the JSON managed by the microcontroller, ensuring there would never be problems with LED control."
+        },
+        "technologies": ["JavaScript", "ReactJS", "C++", "Websockets", "ESP8266", "HTML/CSS"]
+      }
+    ]
+  },
+  "technologies": {
+      "title": "My Technologies",
+      "categories": [
+        {
+          "name": "Languages",
+          "technologies": [
+            { "name": "Python", "status": "Mastered" },
+            { "name": "PHP", "status": "Mastered" },
+            { "name": "JavaScript", "status": "Mastered" },
+            { "name": "TypeScript", "status": "Mastered" }
+          ]
+        },
+        {
+          "name": "Frontend",
+          "technologies": [
+            { "name": "HTML", "status": "Mastered" },
+            { "name": "CSS", "status": "Mastered" },
+            { "name": "ReactJS", "status": "Mastered" },
+            { "name": "Bootstrap", "status": "Mastered" },
+            { "name": "Tailwind", "status": "Learning" }
+          ]
+        },
+        {
+          "name": "Backend/DB",
+          "technologies": [
+            { "name": "SQL", "status": "Mastered" },
+            { "name": "PostgreSQL", "status": "Learning" },
+            { "name": "NextJS", "status": "Learning" }
+          ]
+        },
+        {
+          "name": "Tools",
+          "technologies": [
+            { "name": "VSC", "status": "Mastered" },
+            { "name": "Postman", "status": "Mastered" },
+            { "name": "Git", "status": "Mastered" },
+            { "name": "GitHub", "status": "Mastered" }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "profession": "Programming Technician | Front-End Developer",
+      "rights": "All rights reserved",
+      "legalNotice": "legal advertisement"
+    },
+    "legal": {
+      "title": "Legal Notice",
+      "sections": {
+        "intellectualProperty": {
+          "title": "1. Intellectual Property",
+          "content1": "The original contents of this website, including texts, designs and combination of elements, are the exclusive property of Liam Di Cerbo.",
+          "content2": "This site uses the following third-party resources under their respective licenses:",
+          "resources": {
+            "reactIcons": "Icons from <1>React Icons</1> (MIT License)",
+            "libraries": "Open source libraries like React (MIT License)",
+            "logos": "Technology logos (nominative use according to each brand's policies)"
+          },
+          "content3": "Social media icons (LinkedIn, GitHub, Gmail) are registered trademarks of their respective companies, used here according to their brand usage policies for personal profile links."
+        },
+        "privacy": {
+          "title": "2. Privacy",
+          "content": "This website does not automatically collect personal data from visitors. Any information you voluntarily provide via email will be used exclusively to respond to your inquiry and will not be shared with third parties."
+        },
+        "cookies": {
+          "title": "3. Cookies",
+          "content": "This portfolio does not use tracking cookies or store information on the user's device. Only technical cookies necessary for the basic functioning of the site are employed."
+        },
+        "disclaimer": {
+          "title": "4. Disclaimer",
+          "content": "Liam Di Cerbo is not responsible for any illegal or improper use that third parties may make of the information and content published on this website."
+        },
+        "contact": {
+          "title": "5. Contact",
+          "content": "For any questions regarding this legal notice, you can contact me through my email address: <1>liamdicerbo@gmail.com</1>"
+        }
+      }
+    }
+}
+
+}
+
+
+

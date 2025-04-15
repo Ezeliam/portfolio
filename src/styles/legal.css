@@ -1,0 +1,103 @@
+/* legal.css */
+.legal-page {
+  height: auto !important;
+  min-height: 100vh;
+  display: block !important;
+  scroll-snap-align: none !important;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.third-party-resources {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.third-party-resources li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.third-party-resources a {
+  color: var(--color-principal);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.third-party-resources a:hover {
+  text-decoration: underline;
+}
+
+.legal-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--color-texto-ter);
+  background-color: rgba(27, 27, 27, 0.7);
+  border-radius: 10px;
+  border: 1px solid rgba(65, 238, 238, 0.1);
+  backdrop-filter: blur(5px);
+  position: static !important;
+  z-index: auto !important;
+}
+
+.legal-container h1 {
+  color: var(--color-principal);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  position: relative;
+}
+
+.legal-container h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-principal), transparent);
+  margin: 0.5rem auto 0;
+}
+
+.legal-container h2 {
+  color: var(--color-principal);
+  margin: 2rem 0 1rem;
+  font-size: 1.4rem;
+}
+
+.legal-container p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.legal-container section {
+  margin-bottom: 2.5rem;
+}
+
+/* Efectos de hover para enlaces (si los agregas) */
+.legal-container a {
+  color: var(--color-principal);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.legal-container a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 5px rgba(65, 238, 238, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .legal-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+  
+  .legal-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .legal-container h2 {
+    font-size: 1.3rem;
+  }
+}

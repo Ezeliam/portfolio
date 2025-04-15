@@ -1,0 +1,80 @@
+/* Estilos para los botones sociales */
+.social-buttons {
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.social-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(27, 27, 27, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.social-button:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 5px 15px rgba(65, 238, 238, 0.4);
+}
+
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+/* Colores específicos para cada botón */
+.linkedin:hover {
+  background-color: #0a66c2;
+  border-color: #0a66c2;
+}
+
+.github:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+.email:hover {
+  background-color: #d44638;
+  border-color: #d44638;
+}
+
+.cv:hover {
+  background-color: var(--color-principal);
+  border-color: var(--color-principal);
+  color: var(--color-terciario);
+}
+
+/* Efecto de iluminación al hacer hover */
+.social-button:hover .social-icon {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-button {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+  
+  .social-buttons {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}

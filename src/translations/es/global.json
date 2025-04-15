@@ -1,0 +1,156 @@
+{
+"global": {
+  "header": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "technologies": "Tecnologías",
+    "language_selector": "Idioma",
+    "languages": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "about": {
+      "title": "Sobre mí",
+      "description1": "Soy **Técnico en Programación**, especializado en **Front-End**, pero con la capacidad de adaptarme a **cualquier lenguaje de programación**. *Aprendo rápido* y me adapto fácilmente a nuevas tecnologías.",
+      "description2": "Me enfoco en la **estética** y la **usabilidad**, creando interfaces *intuitivas* y *atractivas* para los usuarios.",
+      "description3": "Actualmente, me estoy formando en **Inteligencia Artificial**, un campo que considero **clave para el futuro** del *desarrollo tecnológico*.",
+      "description4": "También soy **bajista** en la banda [Sapiens](https://www.youtube.com/@sapiensrls). Disfruto de los **videojuegos de estrategia** y soy un gran amante de los **canelones**."   
+      },
+  
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Aquí están algunos de mis proyectos.",
+    "details": "Ver detalles",
+    "descriptiontitle":"Descripción",
+    "technologytitle":"Tecnologías",
+    "projects": [
+      {
+        "title": "Codex",
+        "description": "Sistema de gestión de datos para cooperativa constructora.",
+        "largeDescription": {
+          "intro": "Este proyecto surgió en base a unas pasantías para COOPTEBA, una cooperativa de construcción de viviendas para docentes. Allí nos enfrentamos al problema de diseñar una página web para la gestión de datos de las zonas de construcción, debido a que hasta el momento todos estos datos los manejaban con papel y/o desorganizados en un drive.",
+          "points": [
+            "Diseño intuitivo y fácil, los usuarios son en su mayoría mayores de edad",
+            "Jerarquía de usuarios marcada, solo la dueña de la cooperativa podía agregar o eliminar usuarios",
+            "Registro de acciones, debían tener un registro de todas las acciones realizadas por los usuarios"
+          ],
+          "development": "Siguiendo esos puntos y más que fueron surgiendo en distintas entrevistas, logramos hacer una página web que se ajuste a las necesidades de la cooperativa y que sea fácil de usar para todos los usuarios.\n\nPara programar el producto debimos formarnos en distintas tecnologías. Yo y un compañero nos dedicamos al diseño Front End con React, HTML/CSS y JavaScript, de los cuales solo era nuevo para nosotros React, por otro lado 2 compañeros se formaron en el Back End con Java, Springboot y MySQL. También tuvimos que usar muchas herramientas como Postman, Git, GitHub, Jira, etc.",
+          "achievement": "Este proyecto fue presentado en la ExpoProyecto 2024 organizada por la Universidad Nacional de La Matanza ganando a su vez el premio a la innovación y originalidad, debido a la innovadora forma de gestión de datos nunca antes vista para una cooperativa de construcción."
+        },
+        "technologies": ["ReactJS", "Bootstrap", "SpringBoot", "JavaScript", "HTML/CSS", "JWT"]
+      },
+      {
+        "title": "ReVi",
+        "description": "Registro Virtual de asistencias de alumnos.",
+        "largeDescription": {
+          "intro": "Este es un proyecto escolar en grupo realizado para resolver la digitalización de las asistencias de las escuelas, con la idea de implementarse más a futuro distintos módulos para la gestión de notas, calificaciones, etc.",
+          "points": [
+            "Diseño responsive, la idea principal es que se pueda usar en cualquier dispositivo donde poder tomar asistencias y demás",
+            "Jerarquía de usuarios marcada, los directores administran a los preceptores, los preceptores a los profesores y los profesores a los alumnos",
+            "Escalabilidad, debido a que la idea era hacerlo lo más completo posible a futuro debíamos ser cuidadosos con la forma de programar para no provocarnos problemas en el futuro"
+          ],
+          "development": "En cuanto a su programación se utilizó React, Bootstrap para hacerlo responsive, HTML, CSS y JavaScript para el Front End (donde yo estaba a cargo), y Java, SpringBoot y MySQL para el Back End. También usamos Github para el control de versiones y JWT para los inicios de sesión."
+        },
+        "technologies": ["ReactJS", "Bootstrap", "SpringBoot", "JavaScript", "HTML/CSS", "JWT"]
+      },
+      {
+        "title": "LED Controller",
+        "description": "Controlador de LEDs para control de stock en fábrica.",
+        "largeDescription": {
+          "intro": "Se me encomendó para una fábrica este gestor de LEDs donde se utilizaría para un estante de Stock en el que VERDE es que hay Stock y ROJO es que no hay, de esta forma se debían controlar los LEDs individualmente para cada compartimiento del estante.",
+          "points": [
+            "El estado de los LEDs debían guardarse bajo cualquier circunstancia",
+            "La respuesta de los LEDs debían ser en tiempo real",
+            "Había que evitar cualquier problema con el código del microcontrolador, ya que en caso de haberlo la forma de subirle el nuevo código y probarlo sería un problema debido a la distancia entre la ESP8266 y yo"
+          ],
+          "development": "Comenzando a programar tuve que investigar la forma de guardar un estado de LED sin que se reinicie al apagar, donde pude sacar la solución usando el SPIFFS, un sistema de archivos reducido que tiene el ESP32 y ESP8266, ahí creé un JSON donde se guarda cada estado de LED.\n\nPara la conexión constante y en tiempo real con la página utilizamos la función de WebSockets que tiene el ESP, así mediante solicitudes de la página se cambian los estados del LED y también los estados de los LEDs se muestran en la página.",
+          "conclusion": "Por último tuve en cuenta cada posibilidad de corrupción de datos que podría ocurrir en el JSON manejado en el microcontrolador, de esta forma puedo asegurar que nunca va a haber problema con el control de los LEDs."
+        },
+        "technologies": ["JavaScript", "ReactJS", "C++", "Websockets", "ESP8266", "HTML/CSS"]
+      }
+    ]
+  },
+    "technologies": {
+      "title": "Mis Tecnologías",
+      "categories": [
+        {
+          "name": "Lenguajes",
+          "technologies": [
+            { "name": "Python", "status": "Dominada" },
+            { "name": "PHP", "status": "Dominada" },
+            { "name": "JavaScript", "status": "Dominada" },
+            { "name": "TypeScript", "status": "Dominada" }
+          ]
+        },
+        {
+          "name": "Frontend",
+          "technologies": [
+            { "name": "HTML", "status": "Dominada" },
+            { "name": "CSS", "status": "Dominada" },
+            { "name": "ReactJS", "status": "Dominada" },
+            { "name": "Bootstrap", "status": "Dominada" },
+            { "name": "Tailwind", "status": "Aprendiendo" }
+          ]
+        },
+        {
+          "name": "Backend/DB",
+          "technologies": [
+            { "name": "SQL", "status": "Dominada" },
+            { "name": "PostgreSQL", "status": "Aprendiendo" },
+            { "name": "NextJS", "status": "Aprendiendo" }
+          ]
+        },
+        {
+          "name": "Herramientas",
+          "technologies": [
+            { "name": "VSC", "status": "Dominada" },
+            { "name": "Postman", "status": "Dominada" },
+            { "name": "Git", "status": "Dominada" },
+            { "name": "GitHub", "status": "Dominada" }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "profession": "Técnico en Programación | Front-End Developer",
+      "rights": "Todos los derechos reservados",
+      "legalNotice": "Aviso Legal"
+    },
+    "legal": {
+      "title": "Aviso Legal",
+      "sections": {
+        "intellectualProperty": {
+          "title": "1. Propiedad Intelectual",
+          "content1": "Los contenidos originales de este sitio web, incluyendo textos, diseños y combinación de elementos, son propiedad exclusiva de Liam Di Cerbo.",
+          "content2": "Este sitio utiliza los siguientes recursos de terceros bajo sus respectivas licencias:",
+          "resources": {
+            "reactIcons": "Iconos de <1>React Icons</1> (Licencia MIT)",
+            "libraries": "Bibliotecas de código abierto como React (Licencia MIT)",
+            "logos": "Logotipos de tecnologías (uso nominativo según políticas de cada marca)"
+          },
+          "content3": "Los iconos de redes sociales (LinkedIn, GitHub, Gmail) son marcas registradas de sus respectivas empresas, utilizados aquí según sus políticas de uso de marca para enlaces de perfil personal."
+        },
+        "privacy": {
+          "title": "2. Privacidad",
+          "content": "Este sitio web no recolecta datos personales de los visitantes de manera automática. Cualquier información que usted proporcione voluntariamente a través de correo electrónico será utilizada exclusivamente para responder a su consulta y no será compartida con terceros."
+        },
+        "cookies": {
+          "title": "3. Cookies",
+          "content": "Este portafolio no utiliza cookies de seguimiento ni almacena información en el dispositivo del usuario. Solo se emplean cookies técnicas necesarias para el funcionamiento básico del sitio."
+        },
+        "disclaimer": {
+          "title": "4. Exención de Responsabilidad",
+          "content": "Liam Di Cerbo no se hace responsable del uso ilegal o indebido que terceros puedan hacer de la información y contenidos publicados en este sitio web."
+        },
+        "contact": {
+          "title": "5. Contacto",
+          "content": "Para cualquier cuestión relacionada con este aviso legal, puede contactarme a través de mi dirección de correo electrónico: <1>liamdicerbo@gmail.com</1>"
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,337 @@
+/* Estilos generales de la sección */
+.tercero {
+  background: linear-gradient(to bottom, rgba(15, 15, 15, 0) 0%, rgba(15, 15, 15, 0.9) 100%);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+.about-title {
+  color: var(--color-principal);
+  text-shadow: 0 0 10px rgba(65, 238, 238, 0.7); 
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+/* Slider de proyectos */
+.projects-slider-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px; /* Más espacio para las flechas */
+  position: relative;
+  height: clamp(5rem,60vh,90rem);
+}
+
+.projects-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+  /* Eliminamos el width: X00% ya que no es necesario */
+}
+
+.slider-slide {
+  flex: 0 0 100%; /* Cada slide ocupa el 100% del contenedor */
+  max-width: 100%;
+  padding: 0 20px; /* Espacio entre slides */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* Centramos el contenido */
+}
+
+/* Flechas de navegación */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(49, 198, 218, 0.3);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background-color: rgba(49, 198, 218, 0.7);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-arrow-left {
+  left: 20px;
+}
+
+.slider-arrow-right {
+  right: 20px;
+}
+
+/* Indicadores/puntos */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slider-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider-dot.active {
+  background-color: #31c6da;
+  transform: scale(1.2);
+}
+
+/* Tarjeta de proyecto */
+.project-card {
+  background-color: rgba(27, 27, 27, 0.717);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  width: 90%;
+}
+
+.project-card-inner {
+  display: flex;
+  height: 100%;
+}
+
+
+.project-image {
+  flex: 1;
+  min-width: 50%;
+  background-color: #1a1a1a;
+  background-size: contain; /* Cambiamos de 'contain' a 'cover' para mejor uso del espacio */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 250px; /* Altura mínima para desktop */
+}
+.project-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.8));
+}
+
+.project-content {
+  flex: 1;
+  min-width: 50%;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  color: #f8f9fa;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.project-description {
+  color: #adb5bd;
+  margin-bottom: 1.5rem;
+}
+
+/* Tecnologías */
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-badge {
+  background-color: rgba(49, 198, 218, 0.2);
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(49, 198, 218, 0.3);
+  transition: all 0.3s ease; 
+}
+
+/* Botón de proyecto */
+.project-link {
+  display: inline-block;
+  color: #31c6da;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(49, 198, 218, 0.3);
+  transition: all 0.3s ease;
+  margin-top: auto;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.project-link:hover {
+  background-color: rgba(49, 198, 218, 0.1);
+  color: #31c6da;
+  transform: translateY(-2px);
+}
+
+/* Botón "Ver todos" */
+.btn-view-all {
+  background: transparent;
+  color: #31c6da;
+  border: 1px solid #31c6da;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size:clamp(0.2rem,2vw,0.9rem);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-view-all:hover {
+  background-color: rgba(49, 198, 218, 0.1);
+  box-shadow: 0 0 15px rgba(49, 198, 218, 0.3);
+  transform: translateY(-3px);
+}
+
+.btn-view-all::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(49, 198, 218, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.btn-view-all:hover::before {
+  left: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .projects-slider-container {
+    padding: 0 70px;
+  }
+  
+  .project-card {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects-slider-container {
+    padding: 0 60px;
+  }
+  
+  .slider-slide {
+    padding: 0 15px;
+  }
+  
+  /* Ajustamos el cálculo del transform para móviles */
+  .slider-track {
+    transition: transform 0.5s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-slider-container {
+    padding: 0 50px;
+  }
+  
+  .slider-arrow {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .project-card-inner {
+    flex-direction: column;
+  }
+  
+  
+  .project-image {
+    height: 3vh; 
+    min-width: 100%;
+    min-height: 0;
+  }
+  
+  .project-content {
+    min-width: 100%;
+  }
+  
+  .project-card {
+    max-height: none;
+  }
+
+  .tech-badge {
+    margin: 0;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .project-link {
+    margin: 0;
+
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .project-description{
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-slider-container {
+    padding: 0 40px;
+  }
+  
+  .slider-slide {
+    padding: 0 10px;
+  }
+  
+  .slider-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tech-badge {
+    margin: 0;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.65rem;
+    border-radius: 15px;
+  }
+
+  .project-link {
+    margin: 0;
+
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}

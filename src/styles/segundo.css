@@ -1,0 +1,86 @@
+
+.about {
+  background-color: rgba(21, 21, 21, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+p{
+  font-size: clamp(0.4rem,3vw,1.2rem);
+}
+
+.about:hover {
+  border-color: rgba(49, 198, 218, 0.3);
+  box-shadow: 0 0 15px rgba(49, 198, 218, 0.2);
+}
+
+/* Estilos para resaltados */
+.highlight-soft {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 0 4px;
+  border-radius: 3px;
+  font-style: italic;
+  color: #f8f9fa;
+}
+
+.highlight {
+  background: linear-gradient(90deg, rgba(49, 198, 218, 0.3) 0%, rgba(13, 110, 253, 0) 100%);
+  padding: 0 6px 2px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #31c6da;
+  position: relative;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #31c6da, transparent);
+}
+
+.link-clean {
+  text-decoration: none;
+  color: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.link-clean:hover {
+  color: #31c6da;
+  text-shadow: 0 0 5px rgba(49, 198, 218, 0.5);
+}
+
+/* Ajustes para la foto de perfil */
+.profile-pic {
+  border: 3px solid rgba(49, 198, 218, 0.3);
+  transition: all 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.03);
+  border-color: rgba(49, 198, 218, 0.6);
+  box-shadow: 0 0 15px rgba(49, 198, 218, 0.4);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .min-vh-100 {
+    min-height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .profile-pic {
+    width: 150px !important;
+    height: 150px !important;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about {
+    padding: 2rem !important;
+  }
+}
