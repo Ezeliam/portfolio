@@ -8,6 +8,7 @@ import Third from '../components/Third';
 import Fourth from '../components/Fourth';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import CookieBanner from '../components/CookieBanner';
 
 
 const Index = () => {
@@ -29,6 +30,7 @@ const Index = () => {
         <Fourth></Fourth>
       </section>
       <Footer></Footer>
+      <CookieBanner />
       </div>
 
 

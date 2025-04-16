@@ -137,7 +137,7 @@
           "content": "Este sitio web utiliza Google Analytics 4 para analizar el comportamiento de los visitantes de forma anónima (dirección IP truncada). Los datos recopilados (páginas visitadas, tiempo de navegación, dispositivo usado) son agregados y no identifican personalmente a los usuarios. Cualquier información que usted proporcione voluntariamente a través de correo electrónico será utilizada exclusivamente para responder a su consulta y no será compartida con terceros." },
         "cookies": {
           "title": "3. Cookies",
-          "content": "Este portafolio no utiliza cookies de seguimiento ni almacena información en el dispositivo del usuario. Solo se emplean cookies técnicas necesarias para el funcionamiento básico del sitio."
+          "content": "Este sitio emplea cookies técnicas para el análisis web mediante Google Analytics 4. Puede gestionarlas mediante la configuración de su navegador o instalando el [complemento de inhabilitación de Google](https://tools.google.com/dlpage/gaoptout). Los datos recogidos son anónimos y se usan únicamente con fines estadísticos."
         },
         "disclaimer": {
           "title": "4. Exención de Responsabilidad",
@@ -148,8 +148,14 @@
           "content": "Para cualquier cuestión relacionada con este aviso legal, puede contactarme a través de mi dirección de correo electrónico: <1>liamdicerbo@gmail.com</1>"
         }
       }
-    }
+    },
+    "cookies":{
+      "question": "Uso cookies para analizar el tráfico. ¿Aceptas?",
+      "accept": "Aceptar",
+      "reject": "Rechazar",
+      "info": "Más información"
   }
+}
 }
 
 

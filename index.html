@@ -11,14 +11,23 @@
     <meta property="og:title" content="Liam Di Cerbo | Portafolio" />
     <meta property="og:image" content="URL_de_una_imagen_representativa" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB52EFF48B"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TU_ID"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      
+      // Configuración inicial con consentimiento denegado por defecto
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied'
+      });
+      
       gtag('js', new Date());
-
-      gtag('config', 'G-FB52EFF48B');
+      gtag('config', 'G-TU_ID', { 
+        anonymize_ip: true,
+        // Desactiva el tracking hasta tener consentimiento
+        send_page_view: false
+      });
     </script>
     
     <link rel="icon" href="/favicon.ico" />

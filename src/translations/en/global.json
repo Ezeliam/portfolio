@@ -136,7 +136,7 @@
         },
         "cookies": {
           "title": "3. Cookies",
-          "content": "This portfolio does not use tracking cookies or store information on the user's device. Only technical cookies necessary for the basic functioning of the site are employed."
+          "content": "This site uses technical cookies for web analytics through Google Analytics 4. You can manage them through your browser settings or by installing the [Google opt-out add-on](https://tools.google.com/dlpage/gaoptout). The data collected is anonymous and used for statistical purposes only."
         },
         "disclaimer": {
           "title": "4. Disclaimer",
@@ -147,7 +147,13 @@
           "content": "For any questions regarding this legal notice, you can contact me through my email address: <1>liamdicerbo@gmail.com</1>"
         }
       }
-    }
+    },
+    "cookies":{
+      "question": "I use cookies to analyze traffic, do you accept?",
+      "accept": "Accept",
+      "reject": "Reject",
+      "info": "More information"
+  }
 }
 
 }
