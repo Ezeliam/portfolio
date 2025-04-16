@@ -31,11 +31,6 @@ const projectsData = [
   {
     id: 1,
     title: "Codex",
-    description: "Sistema de gestión de datos para cooperativa constructora.",
-    largeDescription: `
-      <p>Este proyecto surgió en base a unas pasantias...</p>
-      <!-- El resto de la descripción aquí -->
-    `,
     technologies: ["ReactJS", "Bootstrap", "SpringBoot", "JavaScript", "HTML/CSS", "JWT"],
     images: {
       presentation: project1Presentation,
@@ -47,11 +42,6 @@ const projectsData = [
   {
     id: 2,
     title: "ReVi",
-    description: "Registro Virtual de asistencias de alumnos.",
-    largeDescription: `
-      <p>Este es un proyecto escolar en grupo...</p>
-      <!-- El resto de la descripción aquí -->
-    `,
     technologies: ["ReactJS", "Bootstrap", "SpringBoot", "JavaScript", "HTML/CSS", "JWT"],
     images: {
       presentation: project2Presentation,
@@ -63,11 +53,6 @@ const projectsData = [
   {
     id: 3,
     title: "LED Controller",
-    description: "Controlador de LEDs para control de stock en fábrica.",
-    largeDescription: `
-      <p>Se me encomendó para una fábrica...</p>
-      <!-- El resto de la descripción aquí -->
-    `,
     technologies: ["JavaScript", "ReactJS", "C++", "Websockets", "ESP8266", "HTML/CSS"],
     images: {
       presentation: project3Presentation  

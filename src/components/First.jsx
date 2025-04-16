@@ -1,15 +1,18 @@
 import React from 'react';
 import '../styles/primero.css';
 import { FaLinkedin, FaGithub, FaFileDownload, FaEnvelope } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import Particle from '../components/Particle';
 
 const Index = () => {
-  // URLs de tus redes sociales (reemplaza con las tuyas)
+  const { t, i18n } = useTranslation("global");
+
+
   const socialLinks = {
     linkedin: "https://www.linkedin.com/in/liam-di-cerbo/",
     github: "https://github.com/Ezeliam",
     email: "mailto:liamdicerbo@gmail.com",
-    cv: "/CV.pdf" // Ruta a tu archivo CV
+    cv: i18n.language === "en" ? "/CV-English.pdf" : "/CV.pdf"
   };
 
   return (
@@ -20,7 +23,6 @@ const Index = () => {
           <h1 id='nombre'>LIAM DI CERBO</h1>
           <h3 id='front'>Front-End Developer</h3>
           
-          {/* Contenedor de botones */}
           <div className="social-buttons mt-4 d-flex justify-content-center gap-4">
             {/* Botón LinkedIn */}
             <a 

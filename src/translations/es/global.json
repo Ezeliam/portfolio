@@ -126,7 +126,7 @@
           "content1": "Los contenidos originales de este sitio web, incluyendo textos, diseños y combinación de elementos, son propiedad exclusiva de Liam Di Cerbo.",
           "content2": "Este sitio utiliza los siguientes recursos de terceros bajo sus respectivas licencias:",
           "resources": {
-            "reactIcons": "Iconos de <1>React Icons</1> (Licencia MIT)",
+            "reactIcons": "Iconos de React Icons (Licencia MIT)",
             "libraries": "Bibliotecas de código abierto como React (Licencia MIT)",
             "logos": "Logotipos de tecnologías (uso nominativo según políticas de cada marca)"
           },
@@ -134,8 +134,7 @@
         },
         "privacy": {
           "title": "2. Privacidad",
-          "content": "Este sitio web no recolecta datos personales de los visitantes de manera automática. Cualquier información que usted proporcione voluntariamente a través de correo electrónico será utilizada exclusivamente para responder a su consulta y no será compartida con terceros."
-        },
+          "content": "Este sitio web utiliza Google Analytics 4 para analizar el comportamiento de los visitantes de forma anónima (dirección IP truncada). Los datos recopilados (páginas visitadas, tiempo de navegación, dispositivo usado) son agregados y no identifican personalmente a los usuarios. Cualquier información que usted proporcione voluntariamente a través de correo electrónico será utilizada exclusivamente para responder a su consulta y no será compartida con terceros." },
         "cookies": {
           "title": "3. Cookies",
           "content": "Este portafolio no utiliza cookies de seguimiento ni almacena información en el dispositivo del usuario. Solo se emplean cookies técnicas necesarias para el funcionamiento básico del sitio."

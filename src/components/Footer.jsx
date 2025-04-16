@@ -7,7 +7,7 @@ const Footer = () => {
   
   return (
     <footer className="site-footer">
-      <div className="container">
+      <div className="container mb-5">
         <div className="footer-content">
           <div className="footer-brand">
             <p>Liam Di Cerbo</p>
