@@ -105,7 +105,7 @@ const Project = () => {
 
             {(project.repoUrl || project.demoUrl) && (
               <div className="mb-5">
-                <h2 className="mb-4 titulo-sec">{t('projects.linksTitle')}</h2>
+                <h2 className="mb-4 titulo-sec">Links</h2>
                 <div className="d-flex gap-3">
                   {project.repoUrl && (
                     <a 
@@ -114,7 +114,7 @@ const Project = () => {
                       rel="noopener noreferrer"
                       className="btn btn-light"
                     >
-                      <i className="bi bi-github me-2"></i>{t('projects.repository')}
+                      <i className="bi bi-github me-2"></i>GitHub
                     </a>
                   )}
                   {project.demoUrl && (
@@ -124,7 +124,7 @@ const Project = () => {
                       rel="noopener noreferrer"
                       className="btn btn-primary"
                     >
-                      <i className="bi bi-box-arrow-up-right me-2"></i>{t('projects.demo')}
+                      <i className="bi bi-box-arrow-up-right me-2"></i>Demo
                     </a>
                   )}
                 </div>

@@ -55,8 +55,8 @@ const projectsData = [
     title: "LED Controller",
     technologies: ["JavaScript", "ReactJS", "C++", "Websockets", "ESP8266", "HTML/CSS"],
     images: {
-      presentation: project3Presentation  
-      /* details: project3Details */
+      presentation: project3Presentation,
+      details: ""
     },
     repoUrl: "https://github.com/Ezeliam/controlador_LED",
     demoUrl: ""
