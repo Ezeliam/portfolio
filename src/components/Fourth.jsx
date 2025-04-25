@@ -98,7 +98,7 @@ const Fourth = () => {
           </div>
         </div>
         
-        {/* Indicadores de categoría (mobile) */}
+        {/* Indicadores de categoría móvil */}
         <div className="category-indicators d-lg-none">
           {techCategories.map((_, index) => (
             <button
