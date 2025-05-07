@@ -12,7 +12,7 @@ const Project = () => {
   const { t, i18n } = useTranslation("global"); 
   const project = projectsData.find(p => p.id === parseInt(id));
 
-  console.log(project)
+  //console.log(project)
 
   // Obtener los datos traducidos del proyecto
   const translatedProjects = t('global.projects.projects', { returnObjects: true });
