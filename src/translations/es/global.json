@@ -91,7 +91,8 @@
             { "name": "CSS", "status": "Dominada" },
             { "name": "ReactJS", "status": "Dominada" },
             { "name": "Bootstrap", "status": "Dominada" },
-            { "name": "Tailwind", "status": "Aprendiendo" }
+            { "name": "Tailwind", "status": "Aprendiendo" },
+            { "name": "NextJS", "status": "Aprendiendo" }
           ]
         },
         {
@@ -99,7 +100,7 @@
           "technologies": [
             { "name": "SQL", "status": "Dominada" },
             { "name": "PostgreSQL", "status": "Aprendiendo" },
-            { "name": "NextJS", "status": "Aprendiendo" }
+            { "name": "Laravel", "status": "Aprendiendo" }
           ]
         },
         {
@@ -145,7 +146,7 @@
         },
         "contact": {
           "title": "5. Contacto",
-          "content": "Para cualquier cuestión relacionada con este aviso legal, puede contactarme a través de mi dirección de correo electrónico: <1>liamdicerbo@gmail.com</1>"
+          "content": "Para cualquier cuestión relacionada con este aviso legal, puede contactarme a través de mi dirección de correo electrónico: liamdicerbo@gmail.com"
         }
       }
     },

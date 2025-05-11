@@ -89,7 +89,8 @@
             { "name": "CSS", "status": "Mastered" },
             { "name": "ReactJS", "status": "Mastered" },
             { "name": "Bootstrap", "status": "Mastered" },
-            { "name": "Tailwind", "status": "Learning" }
+            { "name": "Tailwind", "status": "Learning" },
+            { "name": "NextJS", "status": "Learning" }
           ]
         },
         {
@@ -97,7 +98,7 @@
           "technologies": [
             { "name": "SQL", "status": "Mastered" },
             { "name": "PostgreSQL", "status": "Learning" },
-            { "name": "NextJS", "status": "Learning" }
+            { "name": "Laravel", "status": "Learning" }
           ]
         },
         {
@@ -144,7 +145,7 @@
         },
         "contact": {
           "title": "5. Contact",
-          "content": "For any questions regarding this legal notice, you can contact me through my email address: <1>liamdicerbo@gmail.com</1>"
+          "content": "For any questions regarding this legal notice, you can contact me through my email address: liamdicerbo@gmail.com"
         }
       }
     },

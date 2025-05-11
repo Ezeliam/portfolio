@@ -27,7 +27,8 @@ const Fourth = () => {
     VSC: "💻",
     Postman: "📬",
     Git: "🔀",
-    GitHub: "🐙"
+    GitHub: "🐙",
+    Laravel:"🧱"
   };
 
   const nextCategory = () => {
