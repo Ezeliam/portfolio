@@ -9,6 +9,7 @@ import project1Detail2 from '../assets/projects/project1/detail3.jpg';
 import project1Detail3 from '../assets/projects/project1/detail4.jpg';
 import project1Detail4 from '../assets/projects/project1/detail5.jpg';
 import project1Detail5 from '../assets/projects/project1/detail6.jpg';
+import project1Detail6 from '../assets/projects/project1/certificado.jpeg';
 
 
 
@@ -24,7 +25,7 @@ import project2Detail5 from '../assets/projects/project2/detail5.webp';
 // Lo mismo para project3...
 
 // Puedes ahora definir las imágenes de detalle manualmente
-const project1Details = [project1Detail1, project1Detail2, project1Detail3, project1Detail4, project1Detail5];
+const project1Details = [project1Detail1, project1Detail2, project1Detail3, project1Detail4, project1Detail5, project1Detail6];
 const project2Details = [project2Detail1, project2Detail2, project2Detail3, project2Detail4, project2Detail5];
 
 const projectsData = [
